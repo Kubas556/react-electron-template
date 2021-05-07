@@ -18,6 +18,11 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={()=>{
+          const { ipcRenderer } = window.require('electron');
+          //@ts-ignore
+          ipcRenderer.invoke('perform-action');
+        }}>exit</button>
       </header>
     </div>
   );

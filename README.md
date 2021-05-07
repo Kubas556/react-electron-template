@@ -2,13 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scripts for react
 
 In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
+Runs the react app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
@@ -21,7 +21,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
+Builds the react app for production to the `react-build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
@@ -39,8 +39,24 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Available Scripts for electron
+
+### `yarn electron`
+
+Launches only electron app window.
+
+### `yarn dev`
+
+Combination of `yarn start` and `yarn electron`. Runs electron app with react page.
+
+### `yarn ebuild`
+
+First it builds react app, and then it will create electron app installer.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+To learn Electron, check this link [Electron documentation](https://www.electronjs.org/docs)
